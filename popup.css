@@ -1,0 +1,20 @@
+body {
+	/* background-color: #f1e7d0 !important; */
+	min-width: 300px !important;
+}
+
+h1 {
+	font-family: 'Noto Serif', serif !important;
+	font-weight: 700 !important;
+	border-bottom: 1px solid #888 !important;
+	padding-bottom: 5%;
+}
+
+p {
+	font-family: 'EB Garamond', serif !important;
+	font-size: 12pt;
+}
+
+.container {
+	margin: 10%
+}
