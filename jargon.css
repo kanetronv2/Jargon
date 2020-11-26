@@ -14,7 +14,19 @@
 }
 
 body {
-	/* background-color: #f1e7d0 !important; */
+	color: #222;
+  background: #fff;
+}
+a {
+    color: #0033cc;
+}
+
+body.dark-theme {
+  color: #eee;
+  background: #061626;
+}
+body.dark-theme a {
+  color: #809fff;
 }
 
 h1 {
