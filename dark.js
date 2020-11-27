@@ -6,7 +6,7 @@ chrome.storage.local.get(['SavedState'], function(result) {
       if(typeof(result.SavedState) == undefined)
         document.body.className = '';
       else
-        result.SavedState = result.SavedState;
+        document.body.className = result.SavedState;
     });
 
 // Listen for a click on the button
