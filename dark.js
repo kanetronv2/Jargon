@@ -1,9 +1,12 @@
 // init button
 const btn = document.querySelector('.btn-toggle');
 
-// set state to saved state
+// set state to saved state if it exists
 chrome.storage.local.get(['SavedState'], function(result) {
-      document.body.className = result.SavedState;
+      if(typeof(result.SavedState) == undefined)
+        document.body.className = '';
+      else
+        result.SavedState = result.SavedState;
     });
 
 // Listen for a click on the button
@@ -15,6 +18,6 @@ btn.addEventListener('click', function() {
   const state = document.body.className;
   chrome.storage.local.set({'SavedState': state}, function() {
 	  // Notify that we saved.
-	  message('Settings saved');
+	  console.log('Settings saved');
 	})
 })
